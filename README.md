@@ -2,7 +2,7 @@
 
 A color Palete app designed for devlopers to easliy choose gradient colors!
 
- ## Screenshots
+ ## UI
 
 <img src="./src/assets/homeUI.png" />
 
