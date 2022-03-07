@@ -32,7 +32,9 @@ function Header2() {
         </div>
       </div>
 
-        { gBox ? <GradientBox /> : '' }
+       <div className={gBox? 'toggle' : ''}>
+       { gBox ? <GradientBox /> : '' }
+       </div>
         </div>
     )
 }
