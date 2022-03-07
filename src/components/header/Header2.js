@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
+import GradientBox from '../gradients/GradientBox';
+
 
 function Header2() {
+  const [gBox, setGBox] = useState(false);
+
+ 
     return (
         <div>
             <div className="header-2">
@@ -8,8 +13,7 @@ function Header2() {
           <div className="options">
             <i
               className="fa-solid fa-bars"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
+              onClick={()=>setGBox(!gBox)}
             ></i>
             Show all gradients
           </div>
@@ -27,6 +31,8 @@ function Header2() {
           </div>
         </div>
       </div>
+
+        { gBox ? <GradientBox /> : '' }
         </div>
     )
 }
