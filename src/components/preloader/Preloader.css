@@ -1,0 +1,32 @@
+.main-container{
+    min-height: 100vh;
+    background-color: white;
+    display: grid;
+    place-items: center;
+}
+
+.l h1{
+  font-weight: 700;
+  font-size: 6rem;
+  
+}
+.l{
+    color: black;
+    position: relative;
+}
+.l p{
+    letter-spacing: 1.5px;
+    font-size: 700;
+}
+
+.l p::after{
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    
+    top: 0;
+    left: 0;
+    border-bottom: 1.5px solid #6ebf8b;
+    opacity: 0.5;
+}
