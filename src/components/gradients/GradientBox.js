@@ -3,7 +3,7 @@ import '../gradients/GradientBox.css'
 
 function GradientBox() {
     return (
-        <div className="main-container">
+        <div className='main-container'>
           <div className="container">
               <div className="row">
                   <div className="col-lg-4">Color</div>

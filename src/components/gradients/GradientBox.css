@@ -1,9 +1,9 @@
 .main-container{
     background-color: #333333;
     min-height: 84.5vh;
-  
+   
     color: white;
-   transition: 5s ease-in;
+    
 }
 .col-lg-4{
     display: flex;
@@ -12,5 +12,5 @@
 
 }
 .toggle{
-   transform-origin: top;
+    transition: height 4s linear;
 }
