@@ -3,7 +3,7 @@ import '../preloader/Preloader.css'
 import SyncLoader from "react-spinners/SyncLoader";
 function Preloader({loading}) {
     return (
-        <div className="main-container">
+        <div className="loader_main-container">
          <div className='l'>
          <h1>
             <span style={{color: "#d82148"}}>Color</span>

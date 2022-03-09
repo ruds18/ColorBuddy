@@ -13,7 +13,8 @@ function Header2() {
       <div className="header-2">
         <div className="header-2_container container">
           <div className="options">
-            <i
+            
+            <i 
               className="fa-solid fa-bars"
               onClick={() => setGBox(!gBox)}
             ></i>
@@ -40,8 +41,9 @@ function Header2() {
         </div>
       </div>
 
-
+      
       {gBox ? <GradientBox /> : ""}
+  
     </div>
 
   )

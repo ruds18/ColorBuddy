@@ -1,7 +1,10 @@
 .main-container{
     background-color: #333333;
-    min-height: 84.5vh;
-   
+    min-height: 81.5vh;
+    -webkit-min-height: 81.5vh;
+    -ms-min-height: 81.5vh;
+    -o-min-height: 81.5vh;
+    -moz-min-height: 81.5vh;
     color: white;
     
 }
@@ -12,5 +15,5 @@
 
 }
 .toggle{
-    transition: height 4s linear;
+    transition: 4s linear;
 }
