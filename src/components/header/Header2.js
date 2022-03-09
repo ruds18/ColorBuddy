@@ -12,9 +12,13 @@ function Header2() {
     setLandingPageData(JsonData);
   }, []);
   const [gBox, setGBox] = useState(false);
-
+  
+  const close = () =>{
+      setGBox(!gBox);
+  }
 
   return (
+
     <div>
       <div className="header-2">
         <div className="header-2_container self-container">
@@ -52,7 +56,7 @@ function Header2() {
       
          {/* {gBox ? <GradientBox gBox={gBox}  /> : " "} */}
     <div className="toggle">
-       {gBox ? <GradientBox gBox={gBox} data={landingPageData.gradients} /> : " "}
+       {gBox ? <GradientBox gBox={gBox} data={landingPageData.gradients} close={close} /> : " "}
        </div>
      
     </div>

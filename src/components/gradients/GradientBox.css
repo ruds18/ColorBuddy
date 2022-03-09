@@ -5,6 +5,9 @@
   color: white;
 }
 .col-lg-4 {
+  width: 100%;
+  font-weight: 700;
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
