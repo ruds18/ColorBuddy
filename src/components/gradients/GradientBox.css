@@ -9,9 +9,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 .toggle {
   height: 84.5vh;
+}
+.row{
+  float: left;
+  width: 33.33%;
+  padding:40px;
 }
 
 @keyframes height {

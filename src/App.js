@@ -6,6 +6,9 @@ import { useEffect, useState } from 'react';
 import Preloader from './components/preloader/Preloader';
 
 function App() {
+
+  
+
   const[loading, setLoading]  = useState(false);
   useEffect(()=>{
    setLoading(true);

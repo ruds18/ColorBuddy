@@ -1,10 +1,16 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import GradientBox from '../gradients/GradientBox';
 import '../gradients/GradientBox.css';
 import ReactCSSTransitionGroup from 'react-transition-group';
+import JsonData from "../data/data.json";
 
 
 function Header2() {
+
+  const [landingPageData, setLandingPageData] = useState({});
+  useEffect(() => {
+    setLandingPageData(JsonData);
+  }, []);
   const [gBox, setGBox] = useState(false);
 
 
@@ -41,7 +47,7 @@ function Header2() {
       </div>
 
 
-       {gBox ? <GradientBox  /> : " "}
+       {gBox ? <GradientBox  data={landingPageData.gradients} /> : " "}
 
      
     </div>

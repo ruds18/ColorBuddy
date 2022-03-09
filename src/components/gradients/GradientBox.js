@@ -1,15 +1,18 @@
 import React from 'react'
 import '../gradients/GradientBox.css'
 
-function GradientBox() {
+const GradientBox = (props) =>{
     return (
-        <div className={`main-container`} e>
+        
+        <div className="main-container">
             <div className="container">
-                <div className="row">
-                    <div className="col-lg-4">Color</div>
-                    <div className="col-lg-4">Color</div>
-                    <div className="col-lg-4">color</div>
+            {props.data
+            ? props.data.map((d, i) => (
+                <div key={`${d.color}-${i}`} className="row" style={{background: d.color}}>
+                    <div className="col-lg-4">{d.color}</div>
                 </div>
+                ))
+                : 'loading'}
             </div>
         </div>
     )
