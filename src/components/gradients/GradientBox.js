@@ -1,9 +1,9 @@
 import React from 'react'
 import '../gradients/GradientBox.css'
 
-function GradientBox() {
+function GradientBox({gBox}) {
     return (
-        <div className={`main-container`} e>
+        <div className={gBox? 'toggle main-container': 'exit-toggle main-container' }>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-4">Color</div>

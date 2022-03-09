@@ -13,11 +13,14 @@ function Header2() {
       <div className="header-2">
         <div className="header-2_container self-container">
           <div className="options">
-            <i
-              className="fa-solid fa-bars"
+        
+           <button className="gradient_button"> <i
+              className={gBox? "fa-solid fa-xmark" : "fa-solid fa-bars"}
               onClick={() => setGBox(!gBox)}
-            ></i>
-            Show all gradients
+            ></i> </button>
+
+            <p>Show all gradients </p>
+             
           </div>
 
           <div className="color">
@@ -40,8 +43,10 @@ function Header2() {
         </div>
       </div>
 
+      
+         {gBox ? <GradientBox gBox={gBox}  /> : " "}
 
-       {gBox ? <GradientBox  /> : " "}
+      
 
      
     </div>

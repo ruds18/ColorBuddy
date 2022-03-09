@@ -1,8 +1,7 @@
 .main-container {
   background-color: #333333;
   /* min-height: 84.5vh; */
-  height: 0px;
-  animation: height 200ms linear forwards;
+
   color: white;
 }
 .col-lg-4 {
@@ -11,7 +10,15 @@
   justify-content: center;
 }
 .toggle {
-  height: 84.5vh;
+  
+    animation: height 200ms linear forwards;
+  
+}
+
+.exit-toggle{
+    border: 2px solid red;
+   animation: height-back 200ms backwards;
+    
 }
 
 @keyframes height {
@@ -21,4 +28,13 @@
   to {
     height: 84.5vh;
   }
+}
+
+@keyframes height-back{
+    from {
+        height: 84.5vh;
+    }
+    to{
+        height: 0px;
+    }
 }

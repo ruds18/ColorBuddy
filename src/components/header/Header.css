@@ -63,12 +63,29 @@
     
   }
   .options{
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .gradient_button{
     display: flex;
     align-items: center;
+    border: 0;
+    background-color: transparent;
+    width: 20px;
+  }
+  .options p {
+    margin-left: 0.4rem;
+    margin-bottom: 0;
+    height: 100%;
+  
   }
   .options i{
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-right: 0.3rem;
   }
   .color{
@@ -78,9 +95,8 @@
   
   }
   .color p{
+    align-self: center;
     margin-bottom: 0;
-  
-   
     align-items: center;
   }
   
