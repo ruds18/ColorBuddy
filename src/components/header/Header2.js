@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import GradientBox from '../gradients/GradientBox';
 import '../gradients/GradientBox.css';
 import ReactCSSTransitionGroup from 'react-transition-group';
-import JsonData from "./data/data.json";
+import JsonData from "../data/data.json";
 
 
 function Header2() {
@@ -50,10 +50,10 @@ function Header2() {
       </div>
 
       
-         {gBox ? <GradientBox gBox={gBox}  /> : " "}
-
-       {gBox ? <GradientBox  data={landingPageData.gradients} /> : " "}
-
+         {/* {gBox ? <GradientBox gBox={gBox}  /> : " "} */}
+    <div className="toggle">
+       {gBox ? <GradientBox gBox={gBox} data={landingPageData.gradients} /> : " "}
+       </div>
      
     </div>
 

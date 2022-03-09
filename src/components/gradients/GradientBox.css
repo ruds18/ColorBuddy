@@ -1,7 +1,7 @@
 .main-container {
   background-color: #333333;
   /* min-height: 84.5vh; */
-
+  width: 100%;
   color: white;
 }
 .col-lg-4 {
@@ -11,21 +11,26 @@
   overflow: hidden;
 }
 .toggle {
-  
     animation: height 200ms linear forwards;
-  
 }
 
 .exit-toggle{
     border: 2px solid red;
    animation: height-back 200ms backwards;
-    
 }
+
 .row{
   float: left;
-  width: 33.33%;
+  cursor: pointer;
+  width: 30%;
   padding:40px;
+  /* border:3px solid rgb(255, 1, 1); */
+  margin: 10px;
 }
+/* .row:hover{
+  border:5px solid black;
+  
+} */
 
 @keyframes height {
   from {
