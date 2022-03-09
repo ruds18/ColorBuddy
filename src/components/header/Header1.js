@@ -5,7 +5,7 @@ function Header1() {
     return (
 
     <div className=" header-1 ">
-      <div className=" header-1_container container">
+      <div className=" header-1_container self-container">
         <div className="logo">
           <h1>
             <span style={{color: "#d82148"}}>Color</span>

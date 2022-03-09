@@ -11,7 +11,7 @@ function Header2() {
   return (
     <div>
       <div className="header-2">
-        <div className="header-2_container container">
+        <div className="header-2_container self-container">
           <div className="options">
             <i
               className="fa-solid fa-bars"
@@ -41,7 +41,9 @@ function Header2() {
       </div>
 
 
-      {gBox ? <GradientBox /> : ""}
+       {gBox ? <GradientBox  /> : " "}
+
+     
     </div>
 
   )

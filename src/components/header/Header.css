@@ -1,8 +1,13 @@
+.self-container{
+  width: 92%;
+}
+
 .header-1 {
     background-color: white;
-    margin: auto;
+    
     padding: 1rem 0;
-    display: flex;
+    display: grid;
+    place-items: center;
   }
   .header-1_container{
       padding-left: 0;
@@ -46,6 +51,8 @@
   
   
     background-color: white;
+    display: grid;
+    place-items: center;
   }
   
   .header-2_container{

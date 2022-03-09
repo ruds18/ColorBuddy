@@ -1,16 +1,24 @@
-.main-container{
-    background-color: #333333;
-    min-height: 84.5vh;
-   
-    color: white;
-    
+.main-container {
+  background-color: #333333;
+  /* min-height: 84.5vh; */
+  height: 0px;
+  animation: height 200ms linear forwards;
+  color: white;
 }
-.col-lg-4{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.col-lg-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toggle {
+  height: 84.5vh;
+}
 
-}
-.toggle{
-    transition: height 4s linear;
+@keyframes height {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 84.5vh;
+  }
 }
