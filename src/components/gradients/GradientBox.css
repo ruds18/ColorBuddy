@@ -27,8 +27,7 @@
 }
 
 .exit-toggle{
-    border: 2px solid red;
-   animation: height-back 200ms backwards;
+   animation: height-back 200ms forwards;
 }
 
 .row{
